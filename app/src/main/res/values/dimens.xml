@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="button_text">20sp</dimen>
+    <dimen name="button_text_landscape">15sp</dimen>
     <dimen name="edit_answer">50sp</dimen>
+    <dimen name="edit_answer_landscape">30sp</dimen>
     <dimen name="edit_operation">30sp</dimen>
-
+    <dimen name="edit_operation_landscape">15sp</dimen>
 
 
 </resources>
