@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg">
+    style="@style/main_background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,23 +14,23 @@
         >
 
         <EditText
+            style="@style/edit_texts"
             android:id="@+id/edit_operation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="textEnd"
             android:text="@string/_edit_operation"
-            android:textColor="@color/white"
             android:textSize="@dimen/edit_operation_landscape"
+            android:editable="false"
             />
 
         <EditText
-            android:textColor="@color/white"
+            style="@style/edit_texts"
             android:id="@+id/edit_answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="textEnd"
             android:text="@string/_edit_answer"
             android:textSize="@dimen/edit_answer"
+            android:editable="false"
             />
 
 
@@ -42,216 +42,122 @@
         android:layout_gravity="center"
         android:layout_weight="8">
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:gravity="center"
-            >
+        <TableRow>
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_number_button"
                 android:id="@+id/button_7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_7"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_number_button"
                 android:id="@+id/button_8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_8"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_number_button"
                 android:id="@+id/button_9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_9"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
-                android:textColor="@color/orange"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_action_button"
                 android:id="@+id/button_multiplication"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_multiplication"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
-                android:textColor="@color/orange"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_action_button"
                 android:id="@+id/button_division"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_division"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
-                android:textColor="@color/orange"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_action_button"
                 android:id="@+id/button_clear"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_clear"
-                android:textSize="@dimen/button_text"
                 />
 
         </TableRow>
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:gravity="center"
-            >
+        <TableRow>
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_number_button"
                 android:id="@+id/button_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_4"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_number_button"
                 android:id="@+id/button_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_5"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_number_button"
                 android:id="@+id/button_6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_6"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
-                android:textColor="@color/orange"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_action_button"
                 android:id="@+id/button_addition"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_addition"
-                android:textSize="@dimen/button_text"
                 />
 
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
-                android:textColor="@color/orange"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_action_button"
                 android:id="@+id/button_subtraction"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_subtraction"
-                android:textSize="@dimen/button_text"
-
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
-                android:textColor="@color/orange"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_action_button"
                 android:id="@+id/button_backspace"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_backspace"
-                android:textSize="@dimen/button_text"
-                android:gravity="center"
                 />
 
         </TableRow>
 
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:gravity="center"
-            >
+        <TableRow>
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_number_button"
                 android:id="@+id/button_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_1"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_number_button"
                 android:id="@+id/button_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_2"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_number_button"
                 android:id="@+id/button_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_3"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_number_button"
                 android:id="@+id/button_0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_0"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
-                android:textColor="@color/orange"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_action_button"
                 android:id="@+id/button_percent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_percent"
-                android:textSize="@dimen/button_text"
                 />
 
-            <Button
-                android:layout_margin="5dp"
-                android:background="#00000000"
-                android:textColor="@color/orange"
+            <com.google.android.material.button.MaterialButton
+                style="@style/calculator_action_button"
                 android:id="@+id/button_even"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/_even"
-                android:textSize="@dimen/button_text"
                 />
 
         </TableRow>
