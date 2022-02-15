@@ -19,8 +19,8 @@
     <string name="_subtraction">-</string>
     <string name="_comma">,</string>
     <string name="_even">=</string>
-    <string name="_edit_answer">=55555</string>
-    <string name="_edit_operation">50000 + 5555</string>
+    <string name="_edit_answer">0</string>
+    <string name="_edit_operation">0</string>
 
 
 
