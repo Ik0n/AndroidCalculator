@@ -22,7 +22,8 @@
     <string name="_edit_answer">0</string>
     <string name="_edit_operation">0</string>
 
-
-
+    <string name="dark_theme">Тёмная тема</string>
+    <string name="light_theme">Светлая тема</string>
+    <string name="launch">Запустить</string>
 
 </resources>
