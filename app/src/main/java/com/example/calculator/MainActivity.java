@@ -45,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (getIntent().getExtras().getString("Theme").equals("dark_theme"))
+            setTheme(R.style.Theme_Calculator_Dark);
+        else if (getIntent().getExtras().getString("Theme").equals("light_theme"))
+            setTheme(R.style.Theme_Calculator_Light);
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState != null) {
